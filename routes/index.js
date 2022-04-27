@@ -13,7 +13,7 @@ router.get('/create', (req,res) => {
   Celebrity
       .find()
       .then(celebrities => {
-          res.render('movies/new-movie', {celebrities})
+          res.render('movies/create-movie', {celebrities})
       })
       .catch(err => console.log(err))
 })
